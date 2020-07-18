@@ -1,14 +1,14 @@
-import DummyClass from "../src/--libraryname--"
+import DummyClass from '../src/library'
 
 /**
  * Dummy test
  */
-describe("Dummy test", () => {
-  it("works if true is truthy", () => {
-    expect(true).toBeTruthy()
+describe('Dummy test', () => {
+  it('DummyClass is instantiable', () => {
+    expect(new DummyClass({ configParam: 'myValue' })).toBeInstanceOf(DummyClass)
   })
-
-  it("DummyClass is instantiable", () => {
-    expect(new DummyClass()).toBeInstanceOf(DummyClass)
+  it('', () => {
+    const myInstance = new DummyClass({ configParam: 'myValue' })
+    expect(myInstance.getConfigParam()).toBe('myValue')
   })
 })

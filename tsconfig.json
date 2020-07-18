@@ -24,5 +24,8 @@
   "include": [
     "src",
     "test"
+  ],
+  "files": [
+    "./src/library.ts"
   ]
 }
